@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
+
+body {
+    background-color: white;
+    position: relative;
+    user-select: none;
+    margin: 0;
+    padding: 0;
+  }
+#cover {
+    display: none;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    max-width: 100%;
+    max-height: 100%;
+    opacity: 0.5;
+    z-index: 9;
+}
+header {
+    width: 100vw;
+    max-width: 100%;
+    height: 20vh;
+    background-color: #023e8a;
+    border-bottom: 10px solid white;
+}
+
+header h1 {
+    color: white;
+    margin: auto;
+    font-size: 3em;
+    font-weight: bolder;
+    padding: 0.9em;
+    font-family: 'Rampart One', cursive;
+}
+
+button {
+    margin-top: 1%;
+    margin-left: 46%;
+    height: 52px;
+    width: auto;
+    color: #023e8a;
+    background-color: #023e8a;
+    border: none;
+    transition: 0.4s;
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+
+button:hover {
+    background-color: #023e8a;
+    color: whitesmoke;
+}
+
+
+.form {
+    position: absolute;
+    background-color: #023e8a;
+    height: 400px;
+    width: 250px;
+    display: none;
+    top: 20%;
+    left: 40%;
+    transform: translate(50%,50%);
+    border-radius: 10px;
+    justify-content: center;
+    transform: skewX(-2deg);
+    flex-direction: column;
+    box-shadow: 5px 5px 0px 2px white,
+      8px 8px 0px 0px black,
+      10px 10px 0px 2px white,
+      13px 13px 0px 0px black,
+      15px 15px 0px 2px white,
+      18px 18px 0px 0px black,
+      20px 20px 0px 5px #03045e;
+    z-index: 10;
+}
+.form input {
+    height: 100px;
+    text-align: center;
+    background-color: #023e8a;
+    font-size: 50px;
+    border: 0px solid #023e8a;
+    color: rgb(0, 0, 0);
+    opacity: 0.3;
+    font-weight: bolder;
+    box-sizing: border-box;
+    outline: 0;
+    overflow: scroll;
+}
+.form span h1 {
+    font-size: 1.25em;
+    opacity: 0;
+    color: white;
+    transform: translate(-3vw,-8vh) skewX(-2deg);
+    transition: 0.1s;
+}
+.form input::placeholder {
+    font-size: 62px;
+    color: black;
+    font-weight: bolder;
+}
+.form span {
+    position: absolute;
+    height: 0px;
+    width: 0px;
+    transform: translate(17%,-11em);
+    border-top: 25px solid #0096c7;
+    border-left: 25px solid #0096c7;
+    border-bottom: 25px solid transparent;
+    border-right: 25px solid #0096c7;
+    transition: 0.2s;
+}
+.form:hover > span {
+    border-top: 50px solid #0096c7;
+    transform: translate(17%,-10.3em);
+    cursor: pointer;
+}
+.form:hover > span > h1 {
+    transform: translate(-22.5px,-45px);
+    cursor: pointer;
+    opacity: 1;
+}
+.form button {
+    background-color: #023e8a;
+    color: black;
+    opacity: 0.3;
+    border: 0px solid #023e8a;
+    font-weight: bolder;
+    font-size: 1.5em;
+    text-align: center;
+}
+.form button:hover {
+    color: white;
+    opacity: 1;
+}
+button:hover {
+    cursor: pointer;
+}
+.remove-class {
+    background-color: #03045e;
+    color: white;
+    transition: 0.4s;
+    border: 2px solid #03045e;
+    box-shadow: 5px 5px 12px 2px grey;
+}
+.remove-class:hover {
+    background-color: white;
+    color: #03045e;
+    cursor: pointer;
+}
+#container {
+    height: 100vh;
+    width: 100vw;
+    max-width: 100%;
+    overflow: auto;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.pointer-class {
+    cursor: pointer;
+}
